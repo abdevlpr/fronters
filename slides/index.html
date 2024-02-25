@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta
+      name="description"
+      content="A framework for easily creating beautiful presentations using HTML"
+    />
+    <meta name="author" content="Hakim El Hattab" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body style="display: flex; flex-direction: column">
+    <nav
+      style="
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+      "
+    >
+      <a href="/" style="color: inherit"> Back to website</a>
+    </nav>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1 class="r-fit-text">السلام عليكم و رحمة الله</h1>
+        </section>
+
+        <!-- HTML -->
+        <section>
+          <section>
+            <h1>Hyper Text Markup Language</h1>
+            <img
+              class="r-stretch"
+              src="../assets/html_logo_icon.svg"
+              alt="html"
+            />
+            <p>what is it?</p>
+          </section>
+          <section data-background="#e44f26">
+            <ul>
+              <li>HTML describes the structure of a Web page</li>
+              <li class="fragment">HTML consists of a series of elements</li>
+              <li class="fragment">
+                HTML elements tell the browser how to display the content
+              </li>
+              <li class="fragment">
+                HTML elements label pieces of content such as "this is a
+                heading", "this is a paragraph", "this is a link", etc.
+              </li>
+              <a
+                style="
+                  color: inherit;
+                  text-decoration: underline;
+                  font-size: 20px;
+                "
+                href="https://www.w3schools.com/html/html_intro.asp"
+                >Reference</a
+              >
+            </ul>
+          </section>
+          <section>
+            <img class="r-stretch" src="/assets/html_diagram.png" />
+          </section>
+          <!-- highlight code 0 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs html" data-trim data-line-numbers="1,8"><script type="text/template">
+						<nav class="navigation container">
+        <a href="/">
+          <img src="/assets/js_logo_icon.svg" alt="" />
+        </a>
+        <ul>
+          <li><a href="/about">about</a></li>
+        </ul>
+      </nav>
+					</script></code></pre>
+            <p>
+              [nav] is a semantic element tells the browser this is a navigation
+            </p>
+          </section>
+          <!-- highlight code 1 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs html" data-trim data-line-numbers="2,4"><script type="text/template">
+						<nav class="navigation container">
+        <a href="/">
+          <img src="/assets/js_logo_icon.svg" alt="" />
+        </a>
+        <ul>
+          <li><a href="/about">about</a></li>
+        </ul>
+      </nav>
+					</script></code></pre>
+            <p>[a] or anchor tag is a link element</p>
+          </section>
+          <!-- highlight code 2 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs html" data-trim data-line-numbers="3"><script type="text/template">
+						<nav class="navigation container">
+        <a href="/">
+          <img src="/assets/js_logo_icon.svg" alt="" />
+        </a>
+        <ul>
+          <li><a href="/about">about</a></li>
+        </ul>
+      </nav>
+					</script></code></pre>
+            <p>[img] can handle image media</p>
+          </section>
+          <!-- highlight code 3 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs html" data-trim data-line-numbers="5-7"><script type="text/template">
+						<nav class="navigation container">
+        <a href="/">
+          <img src="/assets/js_logo_icon.svg" alt="" />
+        </a>
+        <ul>
+          <li><a href="/about">about</a></li>
+        </ul>
+      </nav>
+					</script></code></pre>
+            <p>
+              [ul][li] unordered list and list item define the list bulet points
+            </p>
+          </section>
+          <!-- highlight code 4 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs html" data-trim data-line-numbers="1,9|2,8|3,7|4-6|10-12"><script type="text/template">
+              <main>
+                <header>
+                  <section>
+                    <div>
+                      <p>this is a paragraph</p>
+                    </div>
+                  </section>
+                </header>
+              </main>
+              <footer>
+                Made with (HTML CSS JS) & 💙 in 🗺️ Algeria
+              </footer>
+					</script></code></pre>
+          </section>
+        </section>
+
+        <!-- CSS -->
+        <section>
+          <section>
+            <h1>Cascading Style Sheets</h1>
+            <img
+              class="r-stretch"
+              src="../assets/css_logo_icon.svg"
+              alt="html"
+            />
+            <p>what is it?</p>
+          </section>
+          <section data-background="#1572b6">
+            <ul>
+              <li>CSS stands for Cascading Style Sheets</li>
+              <li class="fragment">
+                CSS describes how HTML elements are to be displayed on screen,
+                paper, or in other media
+              </li>
+              <li class="fragment">
+                CSS saves a lot of work. It can control the layout of multiple
+                web pages all at once
+              </li>
+              <li class="fragment">
+                External stylesheets are stored in CSS files
+              </li>
+              <a
+                style="
+                  color: inherit;
+                  text-decoration: underline;
+                  font-size: 20px;
+                "
+                href="https://www.w3schools.com/html/html_intro.asp"
+                >Reference</a
+              >
+            </ul>
+          </section>
+          <section>
+            <h3>Css syntax</h3>
+            <img class="r-stretch" src="/assets/Css_diagram.png" />
+          </section>
+          <!-- highlight code 0 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs css" data-trim data-line-numbers="9-12|14-17|19-21|23-25|1-7"><script type="text/template">
+              :root {
+                /* Colors */
+                --background-dark: #0f141a;
+                --html-dark: #e44f26;
+                --js-dark: #f5de19;
+                --css-dark: #1572b6;
+              }
+              
+              body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: var(--background-dark);
+              }
+              
+              .container {
+                margin: 0 auto;
+                max-width: var(--max-container);
+              }
+              
+              .navigation li:hover a {
+                text-decoration: underline;
+              }
+              
+              .img-js::after {
+                background-color: var(--js-dark);
+              }
+					</script></code></pre>
+          </section>
+        </section>
+
+        <!-- JS -->
+        <section>
+          <section>
+            <h1>JavaScript</h1>
+            <img
+              class="r-stretch"
+              src="../assets/js_logo_icon.svg"
+              alt="html"
+            />
+            <p>what is it?</p>
+          </section>
+          <section data-background="#f5de19">
+            <ul>
+              <li>JavaScript Can Change HTML Content</li>
+              <li class="fragment">
+                JavaScript Can Change HTML Attribute Values
+              </li>
+              <li class="fragment">JavaScript Can Change HTML Styles (CSS)</li>
+              <li class="fragment">
+                In short JavaScript is a way to programmatically interact with
+                the DOM
+              </li>
+              <a
+                style="
+                  color: inherit;
+                  text-decoration: underline;
+                  font-size: 20px;
+                "
+                href="https://www.w3schools.com/html/html_intro.asp"
+                >Reference</a
+              >
+            </ul>
+          </section>
+          <section>
+            <h3>Document object model (DOM)</h3>
+            <img class="r-stretch" src="/assets/DOM_diagram.png" />
+          </section>
+          <!-- highlight code 0 -->
+          <section data-auto-animate>
+            <h2>Used code in the website</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers="1,3|2|5|7-12"><script type="text/template">
+              document.addEventListener("DOMContentLoaded",() => {
+                const anchors = document.getElementsByTagName("a");
+              })
+
+              const carImg = document.getElementById("img-car");
+
+              fetch("https://dummyjson.com/products/4")
+              .then((response) => response.json())
+              .then((product) => {
+                handleAddProductToDom(product);
+              })
+              .catch((error) => console.error(error));
+					</script></code></pre>
+          </section>
+        </section>
+
+        <!-- Work -->
+        <section>
+          <section>
+            <h2>Now... back to work</h2>
+            <span>Connect to wifi 🛜</span>
+            <p>name: stoneWD</p>
+            <p>pass: www.123456.com</p>
+          </section>
+          <section>
+            <h3>Download needed files from</h3>
+            <a href="http://192.168.8.100/sharing/" target="_blank">
+              http://192.168.8.100/sharing/
+            </a>
+          </section>
+        </section>
+        <section>
+          <h3>Thank you for your attention</h3>
+          <p>usefull links</p>
+          <ul>
+            <a href="https://facebook.com/dzfronters" target="_blank">
+              Facebook page
+            </a>
+            <a href="https://facebook.com/groups/fronters" target="_blank">
+              Facebook group
+            </a>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>

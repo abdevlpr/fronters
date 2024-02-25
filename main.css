@@ -1,0 +1,389 @@
+:root {
+  /* Colors */
+  --background-dark: #0f141a;
+  --container-dark: #06080d;
+  --grey-glow-dark: #404046;
+  --text-dark: #fcfcff;
+  --html-dark: #e44f26;
+  --js-dark: #f5de19;
+  --css-dark: #1572b6;
+  --accent-dark: #7240c8;
+  /* Container */
+  --max-container: 980px;
+  /* Radius */
+  --box-radius: 15px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Css resets */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  padding: 1rem;
+  margin: 0;
+  transition: 0.3s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+}
+
+/* Global */
+.container {
+  margin: 0 auto;
+  max-width: var(--max-container);
+}
+
+/* Navigation */
+.navigation {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: capitalize;
+}
+.navigation li:hover a {
+  text-decoration: underline;
+}
+.navigation .switch {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: var(--box-radius);
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+.navigation .switch:hover {
+  background-color: var(--grey-glow-dark);
+}
+
+.navigation .active {
+  background-color: var(--grey-glow-dark);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  min-height: 90vh;
+}
+.header section {
+  flex: 1 1 350px;
+  opacity: 0;
+  animation: slideUp 1s ease-out 0.2s forwards;
+}
+.heading-hero {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5rem;
+  max-width: 450px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 750px) {
+  .header {
+    text-align: center;
+  }
+  .heading-hero {
+    font-size: 3rem;
+  }
+}
+
+section.hero-img-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 150px;
+  width: 100%;
+  animation: slideUp 1s ease-out 0s forwards;
+  opacity: 0;
+}
+
+.hero-img {
+  position: relative;
+  width: 50%;
+  animation: wabbly 15s ease-in-out 0s infinite;
+}
+.hero-img img {
+  width: 100%;
+  min-width: 50px;
+  display: block;
+  z-index: 5;
+  position: relative;
+}
+.hero-img::after {
+  position: absolute;
+  z-index: 4;
+  content: "";
+  top: -20px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(60px);
+}
+
+.img-js {
+  margin-bottom: -15%;
+  margin-left: -25%;
+  z-index: 3; /*  default z-index: auto; */
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+.img-js::after {
+  background-color: var(--js-dark);
+}
+.img-css {
+  z-index: 2;
+  margin-right: -35%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+.img-css::after {
+  background-color: var(--css-dark);
+}
+.img-html {
+  z-index: 1;
+  margin-top: -25%;
+  margin-left: -25%;
+  animation-duration: 20s;
+}
+.img-html::after {
+  background-color: var(--html-dark);
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes wabbly {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(10px) translateY(20px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+main > section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.gradient-purple {
+  background: linear-gradient(
+    38deg,
+    var(--container-dark) 0%,
+    var(--accent-dark) 100%
+  );
+}
+
+.gradient-grey {
+  background: linear-gradient(
+    38deg,
+    var(--container-dark) 0%,
+    var(--grey-glow-dark) 100%
+  );
+}
+
+/* 🧐 Basic knowledge */
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.course-container li {
+  flex: 1 1 200px;
+  min-height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: var(--box-radius);
+}
+.course-container li:hover {
+  opacity: 0.7;
+}
+
+.course-container a {
+  height: 100%;
+  border-radius: var(--box-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-container .html img,
+.course-container .css img,
+.course-container .js img {
+  min-height: 150px;
+}
+.course-container .html {
+  background-color: var(--html-dark);
+}
+.course-container .css {
+  background-color: var(--css-dark);
+}
+.course-container .js {
+  background-color: var(--js-dark);
+  color: var(--background-dark);
+  cursor: url(/assets/js_logo_icon.svg), auto;
+}
+
+/* 🤪 Dummy api products */
+.product {
+  flex: 1 1 250px;
+}
+.product img {
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+.product-bottom {
+  display: flex;
+  padding: 1rem;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-bottom p,
+.product-bottom h3 {
+  margin: 0;
+}
+
+.screenshots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+.screenshots img {
+  width: 100%;
+  height: 100%;
+}
+
+.screenshots img[alt="html"] {
+  cursor: url(/assets/html_logo_icon.svg), auto;
+}
+.screenshots img[alt="css"] {
+  cursor: url(/assets/css_logo_icon.svg), auto;
+}
+
+/* 🚙 Car scroll effect */
+.scroll-imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  margin-top: 1rem;
+}
+.scroll-imgs .bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scroll-imgs .truck {
+  position: relative;
+  width: 100px;
+  left: 10px;
+}
+.scroll-imgs .car {
+  position: relative;
+  width: 100px;
+  left: 30px;
+}
+
+footer {
+  background-color: var(--container-dark);
+  border-radius: var(--box-radius);
+  padding: 1rem;
+}
+
+footer .links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer .links ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.footer-bottom p {
+  margin: 0;
+}
+
+footer img {
+  width: 16px;
+  height: 16px;
+  margin: 0 0.2rem;
+}
+
+footer a {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+footer a:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>html css js - basic website</title>
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <a href="/">
+        <img src="/assets/js_logo_icon.svg" alt="" />
+      </a>
+      <ul>
+        <li><a href="/slides/index.html">slides</a></li>
+        <li class="switch" id="moon" onclick="handleChangeTheme('moon')">
+          Moon
+        </li>
+        <li class="switch active" id="dark" onclick="handleChangeTheme('dark')">
+          Dark
+        </li>
+      </ul>
+    </nav>
+    <header class="header container">
+      <section>
+        <h1 class="heading-hero">Let’s build something...</h1>
+        <p>The world most basic website you can find... j/k</p>
+      </section>
+      <section class="hero-img-container">
+        <div class="hero-img img-js">
+          <img src="/assets/js_logo_icon.svg" alt="javascript logo" />
+        </div>
+        <div class="hero-img img-css">
+          <img src="/assets/css_logo_icon.svg" alt="css logo" />
+        </div>
+        <div class="hero-img img-html">
+          <img src="/assets/html_logo_icon.svg" alt="HTML logo" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container">
+        <h2 class="heading-section">🧐 Basic knowledge</h2>
+        <ul class="course-container">
+          <li>
+            <a class="html" href="/slides/index.html#/2">
+              <img src="/assets/html_logo_icon.svg" alt="HTML logo" />
+              <h3>HTML</h3>
+              <p>Hyper text markup</p>
+            </a>
+          </li>
+          <li>
+            <a class="css" href="/slides/index.html#/3">
+              <img src="/assets/css_logo_icon.svg" alt="css logo" />
+              <h3>CSS</h3>
+              <p>Cascading style sheets</p>
+            </a>
+          </li>
+          <li>
+            <a class="js" href="/slides/index.html#/4">
+              <img src="/assets/js_logo_icon.svg" alt="javascript logo" />
+              <h3>JS</h3>
+              <p>Javascript</p>
+            </a>
+          </li>
+          <li>
+            <a class="gradient-purple" href="/#footer">
+              <span>Your next step</span>
+              <img src="/assets/drop_down.svg" alt="drop down" />
+            </a>
+          </li>
+          <!-- loop these 3 articles -->
+        </ul>
+      </section>
+      <section class="container">
+        <h2 class="heading-section">🤪 Dummy api products</h2>
+        <ul class="course-container" id="products">
+          <li id="add-product" onclick="handleAddProduct()">
+            <a class="gradient-purple">
+              <span>Add products here</span>
+              <img src="/assets/plus.svg" alt="plus sign" />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="container">
+        <h2 class="heading-section">🐭 Cursor changing</h2>
+        <!-- Know what is the semantic elemnt -->
+        <div class="screenshots">
+          <img src="/assets/css_screenshot.png" alt="css" />
+          <img src="/assets/html_screenshot.png" alt="html" />
+        </div>
+      </section>
+      <section class="container">
+        <h2 class="heading-section">🚙 Car scroll effect</h2>
+        <div class="scroll-imgs">
+          <img class="bg" src="/assets/bg-scroll.svg" alt="" />
+          <img id="img-truck" class="truck" src="/assets/truck.svg" alt="" />
+          <img id="img-car" class="car" src="/assets/car.svg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer class="container" id="footer">
+      <h2 class="heading-section">🗂️🔗 Usefull resourses & links</h2>
+      <ul class="links">
+        <li>
+          <h3><img src="/assets/html_logo_icon.svg" /> HTML</h3>
+          <ul>
+            <li>
+              <a href="https://htmlcheatsheet.com/" target="_blank"
+                >HTML cheat sheet
+                <img src="/assets/external_link.svg" alt="external link" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3><img src="/assets/css_logo_icon.svg" /> CSS</h3>
+          <ul>
+            <li>
+              <a href="https://htmlcheatsheet.com/css/"
+                >CSS cheat sheet
+                <img src="/assets/external_link.svg" alt="external link" />
+              </a>
+              <a href="https://specificity.keegan.st/"
+                >Specificity calculator
+                <img src="/assets/external_link.svg" alt="external link" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3><img src="/assets/js_logo_icon.svg" />JS</h3>
+          <ul>
+            <li>
+              <a href="https://htmlcheatsheet.com/js/"
+                >JS cheat sheet
+                <img src="/assets/external_link.svg" alt="external link" />
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <section class="footer-bottom">
+        <p>
+          Made with (HTML CSS JS) & 💙 in 🗺️ Algeria by
+          <a href="https://linktr.ee/abdeldjebar">
+            <img src="/assets/linktree_logo_icon.svg" alt="linktree" />
+            abbou abdeldjebar
+          </a>
+        </p>
+        <p>ⓒ No copyright 2024 you can use what ever you want</p>
+      </section>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
